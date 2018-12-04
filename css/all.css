@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Microsoft JhengHei, Helvetica;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1000px;
+	border: 1px solid #c7c9c9;
+}
+
+.topbar {
+	background-color: #f6f6f6;
+	margin-bottom: 15px;
+}
+
+.topbar ul {
+	float: right;
+	margin-right: 10px;
+}
+
+.topbar ul li {
+	margin: 6px;
+	float: left;
+}
+
+.topbar li img {
+	margin-right: 5px;
+	float: left;
+}
+
+.topbar li span {
+	float: left;
+}
+
+.topbar .FB a {
+	border-right: 2px solid #cccccc;
+	padding-right: 8px;
+	color: #4460a0;
+}
+
+.topbar .Twitter a {
+	color: #00aaec;
+}
+
+.header h1 {
+	float: left;
+}
+
+.header h1 a {
+	width: 170px;
+	height: 36px;
+	background-image: url("../images/slicing/logo.png");
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.menu {
+	float: right;
+	margin-right: 10px;
+}
+
+.menu a {
+	display: block;
+	padding: 9px 15px 19px 15px;
+	color: #00cc99;
+	border-bottom: 3px solid transparent;
+	text-align: center;
+	transition: all .3s;
+}
+
+.menu ul a {
+	padding: 9px 4px 9px 4px;
+	background-color: white;
+	opacity: 0.9;
+}
+
+.menu a:hover {
+	border-bottom: 3px solid #00cc99;
+}
+
+.menu>li {
+	/* 第一層才float , 第二層li則是由上到下排列 */
+	float: left;
+	margin-left: 30px;
+}
+
+.drop {
+	position: relative;
+}
+
+.menu ul {
+	display: none;
+	/* 避免影響其他版型(解決執行後下方區塊跑版的問題) */
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 99;
+}
+
+.menu a.active {
+	border-bottom: 3px solid #00cc99;
+}
+
+.theme-default {
+	position: relative;
+}
+
+/* 新增的廣告圖片大小與官方不同時，可進行修改 */
+.theme-default #slider {
+	height: 346px;
+}
+
+.header h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	line-height: 1.3;
+	padding-top: 121px;
+	padding-left: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+
+.list {
+	margin-bottom: 70px;
+}
+
+.list .firstProduct {
+	margin-left: 20px;
+}
+
+.list .product {
+	width: 306px;
+	padding: 15px;
+	float: left;
+	margin-right: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px #dbdbdb;
+}
+
+.list img {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.list .RWD {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 36px;
+}
+
+.list .jQ {
+	display: block;
+	padding-top: 9px;
+	padding-bottom: 10px;
+}
+
+.list h2 {
+	text-align: center;
+	line-height: 1.5;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.list p {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	line-height: 1.5;
+}
+
+.list h3 {
+	line-height: 1.5;
+}
+
+.list ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.list li {
+	line-height: 1.5;
+	padding-left: 5px;
+}
+
+.differ_table {
+	margin-bottom: 70px;
+}
+
+.differ_table h2 {
+	font-size: 26px;
+	margin: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+table {
+	margin: 0 auto;
+	width: 80%;
+}
+
+table th {
+	font-weight: bold;
+	background-color: #f7f7f7;
+}
+
+table th,
+table td {
+	padding: 10px 30px;
+	text-align: left;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+table .green {
+	color: #00a67d;
+}
+
+.form {
+	width: 1000px;
+	/* height: 405px; 表單不寫死高度，讓裡面的元素去推擠 */
+	padding: 20px;
+	background-image: url("../images/slicing/bg.png");
+	background-repeat: repeat-x;
+	margin-bottom: 30px;
+}
+
+.form h2 {
+	padding-bottom: 20px;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	line-height: 1.5;
+}
+
+.content_area {
+	float: left;
+}
+
+textarea {
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.form-content {
+	float: right;
+}
+
+label {
+	display: block;
+	margin-bottom: 3px;
+	color: #fff;
+}
+
+.form-content p {
+	margin-bottom: 17px;
+}
+
+.form-content .inputtext {
+	width: 465px;
+	/*height: 30px;*/
+	padding: 6px;
+	border-radius: 5px;
+}
+
+/* 增加陰影樣式 */
+input:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.form-content .btn {
+	padding: 5px 15px;
+	float: right;
+	background-color: #00cc99;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.footer {
+	margin-bottom: 30px;
+}
+
+.footer a {
+	width: 168px;
+	height: 36px;
+	background-image: url("../images/slicing/footerlogo.png");
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.footer ul {
+	float: right;
+	margin-right: 10px;
+}
+
+.footer li {
+	margin-bottom: 10px;
+}
+
+.footer span {
+	color: #e12d80;
+}
